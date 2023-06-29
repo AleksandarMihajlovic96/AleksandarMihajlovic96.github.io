@@ -1,7 +1,6 @@
-const cursor = document.querySelector(".cursor");
-const cursor2 = document.querySelector(".cursor2");
-const cursor3 = document.querySelector(".cursor3");
-const links = document.querySelectorAll("nav ul li a");
+const cursor = document.querySelector(".cursor-inner");
+const cursor2 = document.querySelector(".cursor-middle");
+const cursor3 = document.querySelector(".cursor-outter");
 const navlinks = document.querySelectorAll("nav ul li");
 
 document.addEventListener("mousemove", (e) => {
