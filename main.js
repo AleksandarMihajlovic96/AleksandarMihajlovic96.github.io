@@ -3,9 +3,13 @@ const cursor2 = document.querySelector(".cursor-middle");
 const cursor3 = document.querySelector(".cursor-outter");
 const navlinks = document.querySelectorAll("nav ul li");
 
-document.addEventListener("mousemove", (e) => {
-    let leftPosition = e.pageX + 4;
-    let topPosition = e.pageY + 4;
+document.addEventListener("mousemove", updateCursorPositions);
+document.addEventListener("scroll", updateCursorPositions);
+
+function updateCursorPositions(e) {
+  requestAnimationFrame(() => {
+    let leftPosition = e.pageX + 4 - window.scrollX;
+    let topPosition = e.pageY + 4 - window.scrollY;
 
     cursor.style.left = leftPosition + "px";
     cursor.style.top = topPosition + "px";
@@ -13,7 +17,8 @@ document.addEventListener("mousemove", (e) => {
     cursor2.style.top = topPosition + "px";
     cursor3.style.left = leftPosition + "px";
     cursor3.style.top = topPosition + "px";
-})
+  });
+}
 
 // Animation
 
