@@ -50,6 +50,15 @@ p {
   font-weight: bold;
 }
 
+p a {
+  text-decoration: none;
+  color: #cbf3f0;
+}
+
+p a:hover {
+  transform: scale(1.2);
+}
+
 @keyframes fade-down {
   30% {
     opacity: 0;
@@ -175,9 +184,9 @@ nav ul li a:hover::after {
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  gap:128px;
-  padding: 6rem;  
-  margin-left: 50%; 
+  gap: 128px;
+  padding: 6rem;
+  margin-left: 50%;
 }
 
 .experience-card-container {
@@ -190,6 +199,39 @@ nav ul li a:hover::after {
 }
 
 .experience-card-content {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.projects-card-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.projects-card-container li {
+  color: #cbf3f0;
+}
+
+.projects-card-logo {
+  min-width: 128px;
+}
+
+.projects-card-logo img {
+  height: 64px;
+  width: 64px;
+}
+
+.projects-card-logo img:hover {
+  transform: scale(1.5);
+}
+
+.projects-card-logo-background {
+  background: white;
+  border-radius: 25px;
+}
+
+.projects-card-content {
   display: flex;
   gap: 8px;
   flex-direction: column;
