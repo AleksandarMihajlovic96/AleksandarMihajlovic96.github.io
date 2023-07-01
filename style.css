@@ -43,6 +43,7 @@ h3 a:hover {
 h4 {
   color: #cbf3f0;
   font-weight: bold;
+  opacity: 0.75;
 }
 
 p {
@@ -196,6 +197,7 @@ nav ul li a:hover::after {
 
 .experience-card-year {
   min-width: 128px;
+  opacity: 0.75;
 }
 
 .experience-card-content {
@@ -213,6 +215,31 @@ nav ul li a:hover::after {
   color: #cbf3f0;
 }
 
+.show-more-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 128px;
+}
+
+.show-more-btn {
+  display: inline-block;
+  align-self: center;
+  padding: 0 15px;
+  height: 25px;
+  font-size: 12px;
+  line-height: 25px;
+  border-radius: 25px;
+  background: #cbf3f0;
+  color: #161a1d;
+  font-weight: bold;
+  max-width: 128px;
+}
+
+.show-more-btn:hover {
+  background: #161a1d;
+  color: #cbf3f0;
+  cursor: pointer;
+}
 .projects-card-logo {
   min-width: 128px;
 }

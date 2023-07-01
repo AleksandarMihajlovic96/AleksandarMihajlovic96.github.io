@@ -23,5 +23,18 @@ function updateCursorPositions(e) {
 // Animation
 
 navlinks.forEach((li, i) => {
-    li.style.animationDelay = 0 + i * 140 + "ms";
-})
+  li.style.animationDelay = 0 + i * 140 + "ms";
+});
+
+let buttonText = document.getElementById("textButton");
+buttonText.addEventListener("click", function () {
+  let showMoreText = document.getElementById("showMore");
+
+  if (showMoreText.style.display === "flex") {
+    showMoreText.style.display = "none";
+    buttonText.innerHTML = "Show More &#8595";
+  } else {
+    showMoreText.style.display = "flex";
+    buttonText.innerHTML = "Show Less &#8593";
+  }
+});
