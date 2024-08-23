@@ -344,3 +344,25 @@ nav ul li a:hover::after {
   );
   opacity: 0.02;
 }
+/* 
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+  }
+  .left-side {
+    flex-basis: 100%;
+    top: 0;
+    padding: 2rem;
+  }
+  .right-side {
+    flex-basis: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 128px;
+    padding: 6rem;
+  }
+} */
