@@ -344,25 +344,17 @@ nav ul li a:hover::after {
   );
   opacity: 0.02;
 }
-/* 
-@media (max-width: 768px) {
+
+@media (max-width: 1400px) {
   .container {
-    display: flex;
-    flex-direction: column;
-    width: 75%;
-    margin: 0 auto;
+    display: block;
   }
   .left-side {
-    flex-basis: 100%;
-    top: 0;
-    padding: 2rem;
+    position: static;
+    width: 100%;
   }
   .right-side {
-    flex-basis: 100%;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 128px;
-    padding: 6rem;
+    width: 100%;
+    margin-left: 0px;
   }
-} */
+}
